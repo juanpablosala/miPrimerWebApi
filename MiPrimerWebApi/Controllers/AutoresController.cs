@@ -153,7 +153,7 @@ namespace MiPrimerWebApi.Controllers
 
             context.Autores.Remove(new Autor { Id = autorId });
             context.SaveChanges();
-            return autorId;
+            return NoContent();
         }
     }
 }
